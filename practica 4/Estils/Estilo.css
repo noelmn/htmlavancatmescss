@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'graffity';
+    src: url('../Estils/Fonts/Streetbomber.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin: 0;
+    background-image: url(../imagenes/smfall.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.dropbtn {
+    background-color: #fa7b49;
+    color: rgb(4, 0, 255);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin: 0 10%;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff7300
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #ff7300;
+}
+
+header {
+    background-color: #fa7b49;
+    padding: 5px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    background-color: rgb(153, 109, 197, 50%);
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+
+}
+
+
+#titol>p {
+    color: rgb(255, 166, 0);
+    font-family: graffity, Arial, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 120px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 4px rgb(255, 0, 221);
+    text-decoration: double underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+#titol>img {
+    height: 40%;
+    width: 40%;
+    position: relative;
+    left: 30%;
+}
+
+#Director>div,
+#Personatges>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.fright {
+    float: right;
+    width: 15%;
+    height: 15%;
+    margin: 0 5px;
+}
+
+.fleft {
+    float: left;
+    width: 15%;
+    height: 15%;
+    margin: 0 5px;
+}
+
+h1 {
+    color: rgb(255, 166, 0);
+    font-family: 'graffity', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 4px rgb(255, 0, 0);
+    text-decoration: double underline;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(140, 0, 255);
+    background-color: transparent;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.links {
+    background-color: transparent;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    height: 200px;
+    position: relative;
+}
+
+button {
+    background-color: #fa7b49;
+    color: rgb(140, 0, 255);
+    padding: 5px;
+    text-align: center;
+    font-size: 26px;
+    border-style: ridge;
+}
+
+.right {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+table {
+    color: rgb(255, 255, 255);
+}
+
+.galeria>img {
+    position: relative;
+    left: 5%;
+    height: 30%;
+    width: 30%;
+}
+
+.galeria>iframe {
+    position: relative;
+    left: 35%;
+    height: 30%;
+    width: 30%;
+}
+
+#formopinio {
+    display: flex;
+    position: relative;
+    left: 40%;
+}
+
+.etiqueta {
+    color: white;
+}
+
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+.all-browsers>h1,
+.browser {
+    margin: 10px;
+    padding: 5px;
+}
+
+.browser {
+    background: white;
+}
+
+.browser>h2,
+p {
+    margin: 4px;
+    font-size: 90%;
+}
+
+footer {
+    background-color: rgb(255, 137, 137);
+    padding: 30px;
+}
