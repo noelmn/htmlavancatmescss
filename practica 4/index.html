@@ -7,14 +7,12 @@
         <meta name="description" content="Web d'informacio sobre la pelicula Spider-Man: Into the spiderverse">
         <title> Spider-Man: Into the spiderverse </title>
         <link rel="stylesheet" href="./Estils/Estilo.css">
-
-        <!--hola-->
         
     </head>
     
     <body>
         <div class="dropdown"> 
-            <button class="dropbtn">Ves a</button>
+            <button class="dropbtn"><img src="./imagenes/lupa.png" alt="Busca"></button>
             <div class="dropdown-content">
             <header>
                 <a href="#Inici">Inici</a>
@@ -147,7 +145,7 @@
                     <img src="./imagenes/foto3.jpg" alt="foto grupo completo">
                 </div>
                 <div class="galeria">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/g4Hbz2jLxvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/g4Hbz2jLxvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </section>
             <section id="Opinio">
@@ -158,12 +156,12 @@
                     <input type="text" name="Nom*" placeholder="escriu el teu nom" required/><br>
                     <label class="etiqueta" for="Mail">Mail:</label>
                     <input type="email" name="Mail" placeholder="escriu el teu mail" required/><br>
-                    <label class="etiqueta" for="Visuals">Visuals:</label>
-                    <input type="range" name="Visuals" id="Visuals" min="0" max="10"/><br>
-                    <label class="etiqueta" for="BandaSonora">Banda Sonora:</label>
-                    <input type="range" name="BandaSonora" id="BandaSonora" min="0" max="10"/><br>
+                    <label class="etiqueta" for="Visuals">Visuals:</label><br>
+                    <input type="range" name="Visuals" id="Visuals" min="0" max="10" oninput="this.nextElementSibling.value = this.value"/><output>5</output><br>
+                    <label class="etiqueta" for="BandaSonora">Banda Sonora:</label><br>
+                    <input type="range" name="BandaSonora" id="BandaSonora" min="0" max="10" oninput="this.nextElementSibling.value = this.value"/><output>5</output><br>
                     <label class="etiqueta" for="Nota">Nota que li dones:</label>
-                    <input type="range" name="Nota" id="Nota" min="0" max="10"/><br>
+                    <input type="range" name="Nota" id="Nota" min="0" max="10" oninput="this.nextElementSibling.value = this.value"/><output>5</output><br>
                     <label class="etiqueta" for="Opinio">Reseña:</label><br>
                     <textarea name="Opinio"  maxlength="300" style="width:250px;height:150px;" placeholder="Que penses de la pelicula"  required></textarea><br>
                     <input type="submit">
@@ -186,8 +184,13 @@
                 <!--He afegit aquest boto per tornar al principi-->
             </div>
         </div>
-        <article class="all-browsers">
-            
+        <article class="altrespelis">
+            <h1>Altres pelis a veure</h1>
+            <nav>
+                <a href="https://www.imdb.com/title/tt10872600/"><img src="./imagenes/otra peli.jpg" alt="spider-man no way home poster"></a>
+                <iframe src="https://www.youtube.com/embed/x5FuJ7Gx4Pc" allowfullscreen></iframe><br>
+                <a href="https://www.imdb.com/title/tt2250912/"><img src="./imagenes/Spider_Man_Homecoming.jpg" alt="Spider_Man_Homecoming poster"></a>
+            </nav>
         </article>
         <footer>
             <p id="mail">Mail: n.matallanos2@sapalomera.cat</p>
