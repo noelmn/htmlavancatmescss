@@ -191,8 +191,12 @@ button {
     transform: translate(-50%, -50%);
 }
 
-table {
+table, th, td{
+    border: solid 1px ;
+}
+table, td{
     color: rgb(255, 255, 255);
+    text-align:center;
 }
 
 .galeria>img {
